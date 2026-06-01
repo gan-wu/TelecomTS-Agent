@@ -1,0 +1,214 @@
+{
+  "results": "D:\\WG\\python_code\\TelecomTS_QA_github\\results\\main_agent_3000_hybrid_fair_rag_fast.csv",
+  "benchmark": "D:\\WG\\python_code\\TelecomTS_QA_github\\data\\benchmark_main_agent_3000.json",
+  "rows": 3000,
+  "benchmark_rows": 3000,
+  "task_metrics": {
+    "timeseries": {
+      "rows": 700,
+      "parseable_rate": null,
+      "mae": 0.0
+    },
+    "network": {
+      "rows": 1500,
+      "accuracy": null
+    },
+    "semantic_keyword_recall": {
+      "rows": 550,
+      "scored_rows": 448,
+      "mean_recall": null
+    }
+  },
+  "model_calls": {
+    "rows_with_model": 1550,
+    "total_call_records": 1850,
+    "accepted_model_counts": {
+      "deepseek_flash/deepseek-v4-flash": 1269,
+      "local/qwen3.5-9b-q4": 403,
+      "deepseek_pro/deepseek-v4-pro": 178
+    },
+    "attempt_model_counts": {
+      "deepseek_flash/deepseek-v4-flash": 1550,
+      "local/qwen3.5-9b-q4": 403,
+      "deepseek_pro/deepseek-v4-pro": 281
+    },
+    "route_reason_counts": {
+      "complex solver task uses flash first": 1400,
+      "simple analysis uses local first": 300,
+      "high-confidence RAG uses flash first with pro escalation": 105,
+      "low-confidence RAG uses flash first with pro escalation": 45
+    }
+  },
+  "groups": [
+    {
+      "group": "deterministic_tool",
+      "rows": 1200,
+      "types": {
+        "network": 500,
+        "timeseries": 700
+      },
+      "route_policies": {
+        "tool_first": 1200
+      },
+      "tool_rate": null,
+      "rag_rate": null,
+      "critic_rate": null,
+      "ranking_modes": {},
+      "rag_buckets": {},
+      "rows_with_model": 0,
+      "accepted_model_counts": {},
+      "attempt_model_counts": {}
+    },
+    {
+      "group": "diagnosis_reasoning",
+      "rows": 300,
+      "types": {
+        "diagnosis": 300
+      },
+      "route_policies": {
+        "agent_first": 300
+      },
+      "tool_rate": null,
+      "rag_rate": null,
+      "critic_rate": null,
+      "ranking_modes": {},
+      "rag_buckets": {},
+      "rows_with_model": 300,
+      "accepted_model_counts": {
+        "local/qwen3.5-9b-q4": 336,
+        "deepseek_flash/deepseek-v4-flash": 191,
+        "deepseek_pro/deepseek-v4-pro": 73
+      },
+      "attempt_model_counts": {
+        "local/qwen3.5-9b-q4": 336,
+        "deepseek_flash/deepseek-v4-flash": 300,
+        "deepseek_pro/deepseek-v4-pro": 109
+      }
+    },
+    {
+      "group": "heavy_load_reasoning",
+      "rows": 500,
+      "types": {
+        "network": 500
+      },
+      "route_policies": {
+        "agent_first": 500
+      },
+      "tool_rate": null,
+      "rag_rate": null,
+      "critic_rate": null,
+      "ranking_modes": {},
+      "rag_buckets": {},
+      "rows_with_model": 500,
+      "accepted_model_counts": {
+        "deepseek_flash/deepseek-v4-flash": 450,
+        "local/qwen3.5-9b-q4": 3,
+        "deepseek_pro/deepseek-v4-pro": 47
+      },
+      "attempt_model_counts": {
+        "deepseek_flash/deepseek-v4-flash": 500,
+        "deepseek_pro/deepseek-v4-pro": 50,
+        "local/qwen3.5-9b-q4": 3
+      }
+    },
+    {
+      "group": "low_confidence_complex",
+      "rows": 100,
+      "types": {
+        "complex_network": 100
+      },
+      "route_policies": {
+        "agent_first": 100
+      },
+      "tool_rate": null,
+      "rag_rate": null,
+      "critic_rate": null,
+      "ranking_modes": {},
+      "rag_buckets": {},
+      "rows_with_model": 100,
+      "accepted_model_counts": {
+        "deepseek_flash/deepseek-v4-flash": 96,
+        "deepseek_pro/deepseek-v4-pro": 2,
+        "local/qwen3.5-9b-q4": 2
+      },
+      "attempt_model_counts": {
+        "deepseek_flash/deepseek-v4-flash": 100,
+        "deepseek_pro/deepseek-v4-pro": 4,
+        "local/qwen3.5-9b-q4": 2
+      }
+    },
+    {
+      "group": "multi_tool_composite",
+      "rows": 250,
+      "types": {
+        "composite": 250
+      },
+      "route_policies": {
+        "multi_tool": 250
+      },
+      "tool_rate": null,
+      "rag_rate": null,
+      "critic_rate": null,
+      "ranking_modes": {},
+      "rag_buckets": {},
+      "rows_with_model": 0,
+      "accepted_model_counts": {},
+      "attempt_model_counts": {}
+    },
+    {
+      "group": "rag_knowledge",
+      "rows": 150,
+      "types": {
+        "knowledge": 150
+      },
+      "route_policies": {
+        "rag_first": 150
+      },
+      "tool_rate": null,
+      "rag_rate": null,
+      "critic_rate": null,
+      "ranking_modes": {
+        "bge_reranker": 150
+      },
+      "rag_buckets": {
+        "high": 105,
+        "low": 45
+      },
+      "rows_with_model": 150,
+      "accepted_model_counts": {
+        "deepseek_pro/deepseek-v4-pro": 5,
+        "deepseek_flash/deepseek-v4-flash": 145
+      },
+      "attempt_model_counts": {
+        "deepseek_flash/deepseek-v4-flash": 150,
+        "deepseek_pro/deepseek-v4-pro": 5
+      }
+    },
+    {
+      "group": "regular_network_agent",
+      "rows": 500,
+      "types": {
+        "network": 500
+      },
+      "route_policies": {
+        "agent_first": 500
+      },
+      "tool_rate": null,
+      "rag_rate": null,
+      "critic_rate": null,
+      "ranking_modes": {},
+      "rag_buckets": {},
+      "rows_with_model": 500,
+      "accepted_model_counts": {
+        "deepseek_flash/deepseek-v4-flash": 387,
+        "local/qwen3.5-9b-q4": 62,
+        "deepseek_pro/deepseek-v4-pro": 51
+      },
+      "attempt_model_counts": {
+        "deepseek_flash/deepseek-v4-flash": 500,
+        "deepseek_pro/deepseek-v4-pro": 113,
+        "local/qwen3.5-9b-q4": 62
+      }
+    }
+  ]
+}

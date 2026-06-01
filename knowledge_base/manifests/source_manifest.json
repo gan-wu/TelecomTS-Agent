@@ -1,0 +1,2115 @@
+﻿{
+    "generated_at":  "2026-05-31 16:39:34 +08:00",
+    "project_root":  "D:\\WG\\python_code\\TelecomTS_QA",
+    "extraction_rule":  "Keep domain docs/configs/observability materials plus RAG embedding/rerank/chunking docs; exclude source code, binaries, tests, CI noise, images, and unrelated benchmark JSON.",
+    "repos":  [
+                  {
+                      "name":  "srsRAN_Project",
+                      "group":  "telecom_domain",
+                      "url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "status":  "extracted",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "extracted_files":  48,
+                      "note":  "5G RAN / O-RAN CU-DU configs, Open5GS deployment, Telegraf and Grafana metric materials"
+                  },
+                  {
+                      "name":  "openairinterface5g",
+                      "group":  "telecom_domain",
+                      "url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "status":  "extracted",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "extracted_files":  121,
+                      "note":  "OpenAirInterface 5G architecture, NR SA tutorials, protocol docs, gNB configs and runtime/stat configs"
+                  },
+                  {
+                      "name":  "ric-app-kpimon-go",
+                      "group":  "telecom_domain",
+                      "url":  "https://github.com/o-ran-sc/ric-app-kpimon-go.git",
+                      "status":  "extracted",
+                      "commit":  "8bbbbbb90093db01f88820de755bce0ee2189c88",
+                      "extracted_files":  7,
+                      "note":  "O-RAN KPIMON xApp docs/config/schema for KPI monitoring"
+                  },
+                  {
+                      "name":  "ric-plt-a1",
+                      "group":  "telecom_domain",
+                      "url":  "https://github.com/o-ran-sc/ric-plt-a1.git",
+                      "status":  "extracted",
+                      "commit":  "09a757b4fd63198d8690d50b52bfd04552d47f1f",
+                      "extracted_files":  11,
+                      "note":  "O-RAN A1 mediator docs and xApp policy contract OpenAPI"
+                  },
+                  {
+                      "name":  "oran-sc-ric",
+                      "group":  "telecom_domain",
+                      "url":  "https://github.com/srsran/oran-sc-ric.git",
+                      "status":  "extracted",
+                      "commit":  "621ade26251f69a4ad079ba98bb708d8e5aeeb98",
+                      "extracted_files":  2,
+                      "note":  "srsRAN near-RT RIC integration quickstart/docker compose"
+                  },
+                  {
+                      "name":  "FlagEmbedding",
+                      "group":  "rag_methods",
+                      "url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "status":  "extracted",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "extracted_files":  36,
+                      "note":  "BGE embedding, BGE-M3, retrieval, indexing, reranking and RAG docs"
+                  },
+                  {
+                      "name":  "late-chunking",
+                      "group":  "rag_methods",
+                      "url":  "https://github.com/jina-ai/late-chunking.git",
+                      "status":  "extracted",
+                      "commit":  "1d3bb02bf091becd0771455e4e7959463935e26c",
+                      "extracted_files":  2,
+                      "note":  "Long-context embedding based late chunking method for RAG retrieval"
+                  }
+              ],
+    "files":  [
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/README.md",
+                      "bytes":  6521
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/amf.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/amf.yml",
+                      "bytes":  372
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/cell_cfg_max_128_ues.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/cell_cfg_max_128_ues.yml",
+                      "bytes":  824
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/cell_cfg_max_256_ues.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/cell_cfg_max_256_ues.yml",
+                      "bytes":  967
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/cell_cfg_max_32_ues.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/cell_cfg_max_32_ues.yml",
+                      "bytes":  707
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/cell_cfg_max_512_ues.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/cell_cfg_max_512_ues.yml",
+                      "bytes":  1087
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/cell_cfg_max_64_ues.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/cell_cfg_max_64_ues.yml",
+                      "bytes":  707
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/cell_cfg_pucch_narrow_bw.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/cell_cfg_pucch_narrow_bw.yml",
+                      "bytes":  289
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/CMakeLists.txt",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/CMakeLists.txt",
+                      "bytes":  1052
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/cu.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/cu.yml",
+                      "bytes":  552
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/cu_cp.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/cu_cp.yml",
+                      "bytes":  655
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/cu_up.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/cu_up.yml",
+                      "bytes":  480
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/cu_up_f1u_multiple_sockets.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/cu_up_f1u_multiple_sockets.yml",
+                      "bytes":  2451
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/debug.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/debug.yml",
+                      "bytes":  311
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/du_f1u_multiple_sockets.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/du_f1u_multiple_sockets.yml",
+                      "bytes":  2087
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/du_rf_b200_tdd_n78_20mhz.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/du_rf_b200_tdd_n78_20mhz.yml",
+                      "bytes":  719
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/geo_ntn.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/geo_ntn.yml",
+                      "bytes":  902
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/gnb_custom_cell_properties.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/gnb_custom_cell_properties.yml",
+                      "bytes":  1320
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/gnb_rf_b200_tdd_n78_20mhz.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/gnb_rf_b200_tdd_n78_20mhz.yml",
+                      "bytes":  1077
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/gnb_rf_b210_fdd_srsUE.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/gnb_rf_b210_fdd_srsUE.yml",
+                      "bytes":  1394
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/gnb_rf_n310_fdd_n3_20mhz.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/gnb_rf_n310_fdd_n3_20mhz.yml",
+                      "bytes":  992
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/gnb_ru_picocom_scb_tdd_n78_20mhz.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/gnb_ru_picocom_scb_tdd_n78_20mhz.yml",
+                      "bytes":  1793
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/gnb_ru_ran550_tdd_n78_100mhz_4x2.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/gnb_ru_ran550_tdd_n78_100mhz_4x2.yml",
+                      "bytes":  2010
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/gnb_ru_rpqn4800e_tdd_n78_20mhz_2x2.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/gnb_ru_rpqn4800e_tdd_n78_20mhz_2x2.yml",
+                      "bytes":  1945
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/low_latency.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/low_latency.yml",
+                      "bytes":  654
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/mimo_usrp.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/mimo_usrp.yml",
+                      "bytes":  414
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/mobility.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/mobility.yml",
+                      "bytes":  1610
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/ngu_multiple_sockets.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/ngu_multiple_sockets.yml",
+                      "bytes":  739
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/qos.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/qos.yml",
+                      "bytes":  15447
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/readme.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/readme.md",
+                      "bytes":  4928
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/slicing.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/slicing.yml",
+                      "bytes":  443
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/srb.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/srb.yml",
+                      "bytes":  623
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "configs/testmode.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/configs/testmode.yml",
+                      "bytes":  423
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "docker/README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/docker/README.md",
+                      "bytes":  7293
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "docker/grafana/dashboards/cu_cp.json",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/docker/grafana/dashboards/cu_cp.json",
+                      "bytes":  22746
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "docker/grafana/dashboards/home.json",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/docker/grafana/dashboards/home.json",
+                      "bytes":  53297
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "docker/grafana/dashboards/ngap.json",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/docker/grafana/dashboards/ngap.json",
+                      "bytes":  43971
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "docker/grafana/dashboards/ofh.json",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/docker/grafana/dashboards/ofh.json",
+                      "bytes":  25983
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "docker/grafana/dashboards/performance.json",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/docker/grafana/dashboards/performance.json",
+                      "bytes":  29388
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "docker/grafana/dashboards/rrc.json",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/docker/grafana/dashboards/rrc.json",
+                      "bytes":  40206
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "docker/grafana/provisioning/dashboards/dashboardReference.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/docker/grafana/provisioning/dashboards/dashboardReference.yml",
+                      "bytes":  994
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "docker/grafana/provisioning/datasources/InfluxDB.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/docker/grafana/provisioning/datasources/InfluxDB.yml",
+                      "bytes":  1106
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "docker/open5gs/open5gs-5gc.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/docker/open5gs/open5gs-5gc.yml",
+                      "bytes":  7918
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "docker/open5gs/README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/docker/open5gs/README.md",
+                      "bytes":  4090
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "docker/telegraf/dump_metrics.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/docker/telegraf/dump_metrics.conf",
+                      "bytes":  372
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "docker/telegraf/load_metrics.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/docker/telegraf/load_metrics.conf",
+                      "bytes":  327
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "docker/telegraf/telegraf.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/docker/telegraf/telegraf.conf",
+                      "bytes":  5351
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "srsRAN_Project",
+                      "source_url":  "https://github.com/srsran/srsRAN_Project.git",
+                      "commit":  "4bf1543936d062686d64c10724d2f27a9854f065",
+                      "source_path":  "docker/telegraf/version.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/srsRAN_Project/docker/telegraf/version.yml",
+                      "bytes":  811
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/README.md",
+                      "bytes":  7464
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/datalog_rt_stats.100.2x2.fhi72.cacofonix.yaml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/datalog_rt_stats.100.2x2.fhi72.cacofonix.yaml",
+                      "bytes":  909
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/datalog_rt_stats.100.2x2.yaml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/datalog_rt_stats.100.2x2.yaml",
+                      "bytes":  1116
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/datalog_rt_stats.100.4x4.fhi72.yaml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/datalog_rt_stats.100.4x4.fhi72.yaml",
+                      "bytes":  909
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/datalog_rt_stats.1x1.60.yaml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/datalog_rt_stats.1x1.60.yaml",
+                      "bytes":  1108
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/datalog_rt_stats.2x2.yaml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/datalog_rt_stats.2x2.yaml",
+                      "bytes":  953
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/datalog_rt_stats.60.2x2.yaml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/datalog_rt_stats.60.2x2.yaml",
+                      "bytes":  1110
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/datalog_rt_stats.default.yaml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/datalog_rt_stats.default.yaml",
+                      "bytes":  1110
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb-cu.sa.band78.106prb.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb-cu.sa.band78.106prb.conf",
+                      "bytes":  2061
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb-cu.sa.f1.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb-cu.sa.f1.conf",
+                      "bytes":  2145
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb-cu.sa.f1.ho.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb-cu.sa.f1.ho.conf",
+                      "bytes":  1988
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb-cucp.sa.e1-ho-n2.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb-cucp.sa.e1-ho-n2.conf",
+                      "bytes":  2127
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb-cucp.sa.f1.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb-cucp.sa.f1.conf",
+                      "bytes":  2518
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb-cucp.sa.f1.quectel.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb-cucp.sa.f1.quectel.conf",
+                      "bytes":  2049
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb-cuup.sa.f1.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb-cuup.sa.f1.conf",
+                      "bytes":  1450
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb-cuup.sa.f1.quectel.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb-cuup.sa.f1.quectel.conf",
+                      "bytes":  1331
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb-du.sa.band1.52prb.usrpb210.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb-du.sa.band1.52prb.usrpb210.conf",
+                      "bytes":  7478
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb-du.sa.band78.106prb.rfsim.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb-du.sa.band78.106prb.rfsim.conf",
+                      "bytes":  8699
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb-du.sa.band78.106prb.usrpb200.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb-du.sa.band78.106prb.usrpb200.conf",
+                      "bytes":  8231
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb-du.sa.band78.51prb.usrpb210.ho-pci0.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb-du.sa.band78.51prb.usrpb210.ho-pci0.conf",
+                      "bytes":  7654
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb-du.sa.band78.51prb.usrpb210.ho-pci1.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb-du.sa.band78.51prb.usrpb210.ho-pci1.conf",
+                      "bytes":  7654
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb-pnf.band66.rfsim.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb-pnf.band66.rfsim.conf",
+                      "bytes":  1115
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb-pnf.band77.usrpn310.4x4.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb-pnf.band77.usrpn310.4x4.conf",
+                      "bytes":  872
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb-vnf.sa.band66.u0.25prb.nfapi.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb-vnf.sa.band66.u0.25prb.nfapi.conf",
+                      "bytes":  8568
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb-vnf.sa.band77.162prb.nfapi.4x4.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb-vnf.sa.band77.162prb.nfapi.4x4.conf",
+                      "bytes":  8501
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb-vnf.sa.band78.273prb.aerial.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb-vnf.sa.band78.273prb.aerial.conf",
+                      "bytes":  8427
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb-vnf.sa.band78.273prb.aerial.ul-heavy.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb-vnf.sa.band78.273prb.aerial.ul-heavy.conf",
+                      "bytes":  8663
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb-vnf.sa.band78.78prb.aerial.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb-vnf.sa.band78.78prb.aerial.conf",
+                      "bytes":  8564
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.band66.106prb.rfsim.phytest-dora.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.band66.106prb.rfsim.phytest-dora.conf",
+                      "bytes":  8165
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.band77.273prb.fhi72.4x4-vvdn-phytest.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.band77.273prb.fhi72.4x4-vvdn-phytest.conf",
+                      "bytes":  9336
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.band78.106prb.rfsim.phytest-dora.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.band78.106prb.rfsim.phytest-dora.conf",
+                      "bytes":  8578
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.band79.106prb.usrpn300.phytest-dora.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.band79.106prb.usrpn300.phytest-dora.conf",
+                      "bytes":  8462
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.band79.162prb.usrpn300.phytest-dora.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.band79.162prb.usrpn300.phytest-dora.conf",
+                      "bytes":  8152
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.band79.273prb.usrpn300.phytest-dora.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.band79.273prb.usrpn300.phytest-dora.conf",
+                      "bytes":  8213
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.nsa.band78.106prb.usrpb200.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.nsa.band78.106prb.usrpb200.conf",
+                      "bytes":  8760
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.sa.band254.u0.25prb.rfsim.ntn-leo.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.sa.band254.u0.25prb.rfsim.ntn-leo.conf",
+                      "bytes":  10805
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.sa.band254.u0.25prb.rfsim.ntn.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.sa.band254.u0.25prb.rfsim.ntn.conf",
+                      "bytes":  10382
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.sa.band257.u3.66prb.rfsim.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.sa.band257.u3.66prb.rfsim.conf",
+                      "bytes":  8494
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.sa.band66.106prb.rfsim.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.sa.band66.106prb.rfsim.conf",
+                      "bytes":  9050
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.sa.band77.162prb.usrpn310.2x2.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.sa.band77.162prb.usrpn310.2x2.conf",
+                      "bytes":  8948
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.sa.band77.273prb.fhi72.4x4-vvdn.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.sa.band77.273prb.fhi72.4x4-vvdn.conf",
+                      "bytes":  9325
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.sa.band77.273prb.usrpn310.2x2.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.sa.band77.273prb.usrpn310.2x2.conf",
+                      "bytes":  8040
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.sa.band77.51prb.usrpb200.n2-ho.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.sa.band77.51prb.usrpb200.n2-ho.conf",
+                      "bytes":  8607
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.sa.band78.106prb.fhi72.4x4-benetel550-9b-mplane.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.sa.band78.106prb.fhi72.4x4-benetel550-9b-mplane.conf",
+                      "bytes":  9445
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.sa.band78.106prb.n310.7ds2u.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.sa.band78.106prb.n310.7ds2u.conf",
+                      "bytes":  8822
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.sa.band78.106prb.rfsim.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.sa.band78.106prb.rfsim.conf",
+                      "bytes":  8694
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.sa.band78.106prb.rfsim.flexric.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.sa.band78.106prb.rfsim.flexric.conf",
+                      "bytes":  8914
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.sa.band78.106prb.rfsim.neighbour.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.sa.band78.106prb.rfsim.neighbour.conf",
+                      "bytes":  9003
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.sa.band78.106prb.rfsim.prs.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.sa.band78.106prb.rfsim.prs.conf",
+                      "bytes":  8772
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.sa.band78.106prb.usrpb200.sc-fdma-deltaMCS.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.sa.band78.106prb.usrpb200.sc-fdma-deltaMCS.conf",
+                      "bytes":  8981
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.sa.band78.24prb.rfsim.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.sa.band78.24prb.rfsim.conf",
+                      "bytes":  9030
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.sa.band78.273prb.fhi72.2x2-benetel550-9b-mplane.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.sa.band78.273prb.fhi72.2x2-benetel550-9b-mplane.conf",
+                      "bytes":  9379
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.sa.band78.273prb.rfsim.2x2.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.sa.band78.273prb.rfsim.2x2.conf",
+                      "bytes":  8954
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.sa.band78.51prb.aw2s.ddsuu.2x2.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.sa.band78.51prb.aw2s.ddsuu.2x2.conf",
+                      "bytes":  10011
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.sa.band78.51prb.aw2s.ddsuu.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.sa.band78.51prb.aw2s.ddsuu.conf",
+                      "bytes":  9882
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "ci-scripts/conf_files/gnb.sa.band78.51prb.usrpb200.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/ci-scripts/conf_files/gnb.sa.band78.51prb.usrpb200.conf",
+                      "bytes":  8525
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/5Gnas.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/5Gnas.md",
+                      "bytes":  9590
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/Aerial_FAPI_Split_Tutorial.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/Aerial_FAPI_Split_Tutorial.md",
+                      "bytes":  14680
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/analog_beamforming.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/analog_beamforming.md",
+                      "bytes":  8120
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/BUILD.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/BUILD.md",
+                      "bytes":  12179
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/clang-format.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/clang-format.md",
+                      "bytes":  2697
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/code-style-contrib.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/code-style-contrib.md",
+                      "bytes":  13523
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/cross-compile.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/cross-compile.md",
+                      "bytes":  3599
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/d2d_emulator_setup.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/d2d_emulator_setup.md",
+                      "bytes":  5111
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/data_recording.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/data_recording.md",
+                      "bytes":  27390
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/doc_best_practices.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/doc_best_practices.md",
+                      "bytes":  6132
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/environment-variables.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/environment-variables.md",
+                      "bytes":  1845
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/FEATURE_SET.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/FEATURE_SET.md",
+                      "bytes":  29043
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/GET_SOURCES.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/GET_SOURCES.md",
+                      "bytes":  1810
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/gNB_frequency_setup.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/gNB_frequency_setup.md",
+                      "bytes":  5142
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/handover-tutorial.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/handover-tutorial.md",
+                      "bytes":  23677
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/iqrecordplayer_usage.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/iqrecordplayer_usage.md",
+                      "bytes":  4175
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/L1SIM.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/L1SIM.md",
+                      "bytes":  2443
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/L2NFAPI.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/L2NFAPI.md",
+                      "bytes":  1660
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/L2NFAPI_NOS1.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/L2NFAPI_NOS1.md",
+                      "bytes":  10423
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/L2NFAPI_S1.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/L2NFAPI_S1.md",
+                      "bytes":  9873
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/LDPC_OFFLOAD_SETUP.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/LDPC_OFFLOAD_SETUP.md",
+                      "bytes":  12524
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/nfapi.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/nfapi.md",
+                      "bytes":  14470
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/nr-ue-design.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/nr-ue-design.md",
+                      "bytes":  2695
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/NR_NFAPI_archi.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/NR_NFAPI_archi.md",
+                      "bytes":  12471
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/NR_SA_Tutorial_COTS_UE.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/NR_SA_Tutorial_COTS_UE.md",
+                      "bytes":  10036
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/NR_SA_Tutorial_OAI_CN5G.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/NR_SA_Tutorial_OAI_CN5G.md",
+                      "bytes":  2459
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/NR_SA_Tutorial_OAI_multi_UE.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/NR_SA_Tutorial_OAI_multi_UE.md",
+                      "bytes":  4062
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/NR_SA_Tutorial_OAI_nrUE.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/NR_SA_Tutorial_OAI_nrUE.md",
+                      "bytes":  10416
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/ntn-configuration.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/ntn-configuration.md",
+                      "bytes":  10274
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/ORAN_FHI7.2_Tutorial.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/ORAN_FHI7.2_Tutorial.md",
+                      "bytes":  157102
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/packages.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/packages.md",
+                      "bytes":  4293
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/physical-simulators.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/physical-simulators.md",
+                      "bytes":  10495
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/rach_processing_in_gNB.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/rach_processing_in_gNB.md",
+                      "bytes":  1755
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/README.md",
+                      "bytes":  7503
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/runmodem-nrue.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/runmodem-nrue.md",
+                      "bytes":  18250
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/RUNMODEM.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/RUNMODEM.md",
+                      "bytes":  13311
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/RUN_NR_PRS.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/RUN_NR_PRS.md",
+                      "bytes":  11866
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/SW-archi-graph.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/SW-archi-graph.md",
+                      "bytes":  4173
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/SW_archi.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/SW_archi.md",
+                      "bytes":  20399
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/system_requirements.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/system_requirements.md",
+                      "bytes":  4395
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/TESTBenches.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/TESTBenches.md",
+                      "bytes":  21364
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/TESTING_OAI_NSA_COTS_UE.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/TESTING_OAI_NSA_COTS_UE.md",
+                      "bytes":  13494
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/time_management.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/time_management.md",
+                      "bytes":  9437
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/tuning_and_security.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/tuning_and_security.md",
+                      "bytes":  12975
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/UL_MIMO.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/UL_MIMO.md",
+                      "bytes":  3380
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/UnitTests.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/UnitTests.md",
+                      "bytes":  9147
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/dev_tools/sanitizers.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/dev_tools/sanitizers.md",
+                      "bytes":  4515
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/dev_tools/tracy.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/dev_tools/tracy.md",
+                      "bytes":  2227
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/E1AP/E1-design.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/E1AP/E1-design.md",
+                      "bytes":  8282
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/E1AP/e1ap_procedures.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/E1AP/e1ap_procedures.md",
+                      "bytes":  3466
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/episys/lte_mode_l2_emulator/README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/episys/lte_mode_l2_emulator/README.md",
+                      "bytes":  3951
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/episys/nsa_mode_l2_emulator/README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/episys/nsa_mode_l2_emulator/README.md",
+                      "bytes":  6250
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/F1AP/F1-design.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/F1AP/F1-design.md",
+                      "bytes":  18350
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/F1AP/F1AP-lib.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/F1AP/F1AP-lib.md",
+                      "bytes":  3222
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/MAC/mac-usage.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/MAC/mac-usage.md",
+                      "bytes":  26692
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/MAC/scheduler-architecture.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/MAC/scheduler-architecture.md",
+                      "bytes":  22408
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/RRC/rrc-dev.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/RRC/rrc-dev.md",
+                      "bytes":  48635
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/RRC/rrc-usage.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/RRC/rrc-usage.md",
+                      "bytes":  13051
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/testing_oai_nsa_w_cots_ue_resources/enb.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/testing_oai_nsa_w_cots_ue_resources/enb.conf",
+                      "bytes":  11628
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/testing_oai_nsa_w_cots_ue_resources/gnb.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/testing_oai_nsa_w_cots_ue_resources/gnb.conf",
+                      "bytes":  9142
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/tutorial_resources/oai-cn5g/docker-compose-positioning.yaml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/tutorial_resources/oai-cn5g/docker-compose-positioning.yaml",
+                      "bytes":  5842
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/tutorial_resources/oai-cn5g/docker-compose.yaml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/tutorial_resources/oai-cn5g/docker-compose.yaml",
+                      "bytes":  5319
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/tutorial_resources/oai-cn5g/conf/config.yaml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/tutorial_resources/oai-cn5g/conf/config.yaml",
+                      "bytes":  6130
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/tutorial_resources/oai-cn5g/conf/sip.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/tutorial_resources/oai-cn5g/conf/sip.conf",
+                      "bytes":  93
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "openairinterface5g",
+                      "source_url":  "https://github.com/OPENAIRINTERFACE/openairinterface5g.git",
+                      "commit":  "cb0e501293a7a4664f09322136d7ff29a39343dc",
+                      "source_path":  "doc/tutorial_resources/oai-cn5g/conf/users.conf",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/openairinterface5g/doc/tutorial_resources/oai-cn5g/conf/users.conf",
+                      "bytes":  402
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "ric-app-kpimon-go",
+                      "source_url":  "https://github.com/o-ran-sc/ric-app-kpimon-go.git",
+                      "commit":  "8bbbbbb90093db01f88820de755bce0ee2189c88",
+                      "source_path":  "config-file.yaml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/ric-app-kpimon-go/config-file.yaml",
+                      "bytes":  1307
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "ric-app-kpimon-go",
+                      "source_url":  "https://github.com/o-ran-sc/ric-app-kpimon-go.git",
+                      "commit":  "8bbbbbb90093db01f88820de755bce0ee2189c88",
+                      "source_path":  "container-tag.yaml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/ric-app-kpimon-go/container-tag.yaml",
+                      "bytes":  93
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "ric-app-kpimon-go",
+                      "source_url":  "https://github.com/o-ran-sc/ric-app-kpimon-go.git",
+                      "commit":  "8bbbbbb90093db01f88820de755bce0ee2189c88",
+                      "source_path":  "INFO.yaml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/ric-app-kpimon-go/INFO.yaml",
+                      "bytes":  1467
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "ric-app-kpimon-go",
+                      "source_url":  "https://github.com/o-ran-sc/ric-app-kpimon-go.git",
+                      "commit":  "8bbbbbb90093db01f88820de755bce0ee2189c88",
+                      "source_path":  "README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/ric-app-kpimon-go/README.md",
+                      "bytes":  301
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "ric-app-kpimon-go",
+                      "source_url":  "https://github.com/o-ran-sc/ric-app-kpimon-go.git",
+                      "commit":  "8bbbbbb90093db01f88820de755bce0ee2189c88",
+                      "source_path":  "routes.txt",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/ric-app-kpimon-go/routes.txt",
+                      "bytes":  133
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "ric-app-kpimon-go",
+                      "source_url":  "https://github.com/o-ran-sc/ric-app-kpimon-go.git",
+                      "commit":  "8bbbbbb90093db01f88820de755bce0ee2189c88",
+                      "source_path":  "deploy/config.json",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/ric-app-kpimon-go/deploy/config.json",
+                      "bytes":  1480
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "ric-app-kpimon-go",
+                      "source_url":  "https://github.com/o-ran-sc/ric-app-kpimon-go.git",
+                      "commit":  "8bbbbbb90093db01f88820de755bce0ee2189c88",
+                      "source_path":  "deploy/schema.json",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/ric-app-kpimon-go/deploy/schema.json",
+                      "bytes":  6439
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "ric-plt-a1",
+                      "source_url":  "https://github.com/o-ran-sc/ric-plt-a1.git",
+                      "commit":  "09a757b4fd63198d8690d50b52bfd04552d47f1f",
+                      "source_path":  "INFO.yaml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/ric-plt-a1/INFO.yaml",
+                      "bytes":  2585
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "ric-plt-a1",
+                      "source_url":  "https://github.com/o-ran-sc/ric-plt-a1.git",
+                      "commit":  "09a757b4fd63198d8690d50b52bfd04552d47f1f",
+                      "source_path":  "README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/ric-plt-a1/README.md",
+                      "bytes":  343
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "ric-plt-a1",
+                      "source_url":  "https://github.com/o-ran-sc/ric-plt-a1.git",
+                      "commit":  "09a757b4fd63198d8690d50b52bfd04552d47f1f",
+                      "source_path":  "docs/a1_xapp_contract_openapi.yaml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/ric-plt-a1/docs/a1_xapp_contract_openapi.yaml",
+                      "bytes":  2590
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "ric-plt-a1",
+                      "source_url":  "https://github.com/o-ran-sc/ric-plt-a1.git",
+                      "commit":  "09a757b4fd63198d8690d50b52bfd04552d47f1f",
+                      "source_path":  "docs/conf.yaml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/ric-plt-a1/docs/conf.yaml",
+                      "bytes":  46
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "ric-plt-a1",
+                      "source_url":  "https://github.com/o-ran-sc/ric-plt-a1.git",
+                      "commit":  "09a757b4fd63198d8690d50b52bfd04552d47f1f",
+                      "source_path":  "docs/developer-guide.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/ric-plt-a1/docs/developer-guide.rst",
+                      "bytes":  1898
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "ric-plt-a1",
+                      "source_url":  "https://github.com/o-ran-sc/ric-plt-a1.git",
+                      "commit":  "09a757b4fd63198d8690d50b52bfd04552d47f1f",
+                      "source_path":  "docs/index.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/ric-plt-a1/docs/index.rst",
+                      "bytes":  388
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "ric-plt-a1",
+                      "source_url":  "https://github.com/o-ran-sc/ric-plt-a1.git",
+                      "commit":  "09a757b4fd63198d8690d50b52bfd04552d47f1f",
+                      "source_path":  "docs/installation-guide.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/ric-plt-a1/docs/installation-guide.rst",
+                      "bytes":  1571
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "ric-plt-a1",
+                      "source_url":  "https://github.com/o-ran-sc/ric-plt-a1.git",
+                      "commit":  "09a757b4fd63198d8690d50b52bfd04552d47f1f",
+                      "source_path":  "docs/overview.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/ric-plt-a1/docs/overview.rst",
+                      "bytes":  5952
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "ric-plt-a1",
+                      "source_url":  "https://github.com/o-ran-sc/ric-plt-a1.git",
+                      "commit":  "09a757b4fd63198d8690d50b52bfd04552d47f1f",
+                      "source_path":  "docs/release-notes.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/ric-plt-a1/docs/release-notes.rst",
+                      "bytes":  15928
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "ric-plt-a1",
+                      "source_url":  "https://github.com/o-ran-sc/ric-plt-a1.git",
+                      "commit":  "09a757b4fd63198d8690d50b52bfd04552d47f1f",
+                      "source_path":  "docs/requirements-docs.txt",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/ric-plt-a1/docs/requirements-docs.txt",
+                      "bytes":  79
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "ric-plt-a1",
+                      "source_url":  "https://github.com/o-ran-sc/ric-plt-a1.git",
+                      "commit":  "09a757b4fd63198d8690d50b52bfd04552d47f1f",
+                      "source_path":  "docs/user-guide-api.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/ric-plt-a1/docs/user-guide-api.rst",
+                      "bytes":  11494
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "oran-sc-ric",
+                      "source_url":  "https://github.com/srsran/oran-sc-ric.git",
+                      "commit":  "621ade26251f69a4ad079ba98bb708d8e5aeeb98",
+                      "source_path":  "docker-compose.yml",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/oran-sc-ric/docker-compose.yml",
+                      "bytes":  5890
+                  },
+                  {
+                      "group":  "telecom_domain",
+                      "repo":  "oran-sc-ric",
+                      "source_url":  "https://github.com/srsran/oran-sc-ric.git",
+                      "commit":  "621ade26251f69a4ad079ba98bb708d8e5aeeb98",
+                      "source_path":  "README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/telecom_domain/oran-sc-ric/README.md",
+                      "bytes":  18878
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/README.md",
+                      "bytes":  23077
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "README_zh.md",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/README_zh.md",
+                      "bytes":  21082
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/README.md",
+                      "bytes":  137
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/index.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/index.rst",
+                      "bytes":  3701
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/API/inference.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/API/inference.rst",
+                      "bytes":  163
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/bge/bge_icl.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/bge/bge_icl.rst",
+                      "bytes":  4213
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/bge/bge_m3.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/bge/bge_m3.rst",
+                      "bytes":  5812
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/bge/bge_reranker.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/bge/bge_reranker.rst",
+                      "bytes":  2761
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/bge/bge_reranker_v2.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/bge/bge_reranker_v2.rst",
+                      "bytes":  6590
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/bge/bge_v1_v1.5.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/bge/bge_v1_v1.5.rst",
+                      "bytes":  6733
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/bge/index.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/bge/index.rst",
+                      "bytes":  410
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/Introduction/embedder.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/Introduction/embedder.rst",
+                      "bytes":  2483
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/Introduction/index.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/Introduction/index.rst",
+                      "bytes":  642
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/Introduction/installation.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/Introduction/installation.rst",
+                      "bytes":  1401
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/Introduction/IR.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/Introduction/IR.rst",
+                      "bytes":  2340
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/Introduction/overview.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/Introduction/overview.rst",
+                      "bytes":  995
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/Introduction/quick_start.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/Introduction/quick_start.rst",
+                      "bytes":  885
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/Introduction/reranker.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/Introduction/reranker.rst",
+                      "bytes":  1286
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/Introduction/similarity.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/Introduction/similarity.rst",
+                      "bytes":  2542
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/tutorial/1_Embedding.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/tutorial/1_Embedding.rst",
+                      "bytes":  230
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/tutorial/2_Metrics.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/tutorial/2_Metrics.rst",
+                      "bytes":  128
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/tutorial/3_Indexing.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/tutorial/3_Indexing.rst",
+                      "bytes":  200
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/tutorial/4_Evaluation.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/tutorial/4_Evaluation.rst",
+                      "bytes":  287
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/tutorial/5_Reranking.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/tutorial/5_Reranking.rst",
+                      "bytes":  158
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/tutorial/6_RAG.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/tutorial/6_RAG.rst",
+                      "bytes":  122
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/tutorial/7_Finetuning.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/tutorial/7_Finetuning.rst",
+                      "bytes":  193
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "docs/source/tutorial/index.rst",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/docs/source/tutorial/index.rst",
+                      "bytes":  461
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "examples/README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/examples/README.md",
+                      "bytes":  7756
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "examples/evaluation/README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/examples/evaluation/README.md",
+                      "bytes":  22622
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "examples/finetune/embedder/README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/examples/finetune/embedder/README.md",
+                      "bytes":  18160
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "examples/finetune/reranker/README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/examples/finetune/reranker/README.md",
+                      "bytes":  13527
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "examples/inference/embedder/README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/examples/inference/embedder/README.md",
+                      "bytes":  28287
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "examples/inference/reranker/README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/examples/inference/reranker/README.md",
+                      "bytes":  24105
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "research/README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/research/README.md",
+                      "bytes":  6907
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "research/llm_dense_retriever/README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/research/llm_dense_retriever/README.md",
+                      "bytes":  12281
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "FlagEmbedding",
+                      "source_url":  "https://github.com/FlagOpen/FlagEmbedding.git",
+                      "commit":  "7ed43d67ec03fbe5c31c0992dbfa941fb1860549",
+                      "source_path":  "research/reranker/README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/FlagEmbedding/research/reranker/README.md",
+                      "bytes":  5805
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "late-chunking",
+                      "source_url":  "https://github.com/jina-ai/late-chunking.git",
+                      "commit":  "1d3bb02bf091becd0771455e4e7959463935e26c",
+                      "source_path":  "pyproject.toml",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/late-chunking/pyproject.toml",
+                      "bytes":  548
+                  },
+                  {
+                      "group":  "rag_methods",
+                      "repo":  "late-chunking",
+                      "source_url":  "https://github.com/jina-ai/late-chunking.git",
+                      "commit":  "1d3bb02bf091becd0771455e4e7959463935e26c",
+                      "source_path":  "README.md",
+                      "knowledge_path":  "knowledge_base/source_docs/rag_methods/late-chunking/README.md",
+                      "bytes":  9952
+                  }
+              ]
+}

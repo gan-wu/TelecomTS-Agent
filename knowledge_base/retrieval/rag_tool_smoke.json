@@ -1,0 +1,86 @@
+{
+  "query": "What does high UL_BLER mean?",
+  "top_k": 2,
+  "dense_count": 30,
+  "bm25_count": 30,
+  "fused_count": 30,
+  "final_count": 2,
+  "ranking_mode": "bge_reranker",
+  "reranker_available": true,
+  "reranker_error": null,
+  "hits": [
+    {
+      "chunk_id": "e923a7c2a575fa9a2ebf6e90e40bef9cc7b0f665",
+      "source": "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+      "repo": "TelecomTS_glossary",
+      "section": "TelecomTS KPI And Anomaly Glossary > Radio Quality KPIs > DLBLER And ULBLER",
+      "rerank_score": 0.9968641641227171,
+      "rank_score": 0.9968641641227171,
+      "ranker": "bge_reranker",
+      "rrf_score": 0.03252247488101534,
+      "dense_rank": 1,
+      "bm25_rank": 2,
+      "evidence": "上下文：来源 TelecomTS_glossary，类别 project_glossary，主题 KPI and anomaly troubleshooting glossary，章节 TelecomTS KPI And Anomaly Glossary > Radio Quality KPIs > DLBLER And ULBLER，路径 knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md，关键词 BLER, RAN, KPI, NR, DU, RSRP, SINR。 ### DL_BLER And UL_BLER Block Error Rate for downlink and uplink transport blocks. BLER is the fraction of transport blocks that cannot be decoded correctly. High UL_BLER means unreliable uplink transmission and can be caused by poor radio...",
+      "metadata": {
+        "source_path": "knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+        "page": "",
+        "group": "project_glossary"
+      }
+    },
+    {
+      "chunk_id": "d2dac574bc021fe2a31aac77b48a8d9df534bfc9",
+      "source": "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/heavy_load_vs_performance.md",
+      "repo": "TelecomTS_glossary",
+      "section": "Heavy Load Versus Performance Playbook > Evidence Checklist",
+      "rerank_score": 0.9714558483038396,
+      "rank_score": 0.9714558483038396,
+      "ranker": "bge_reranker",
+      "rrf_score": 0.031746031746031744,
+      "dense_rank": 3,
+      "bm25_rank": 3,
+      "evidence": "上下文：来源 TelecomTS_glossary，类别 project_glossary，主题 KPI and anomaly troubleshooting glossary，章节 Heavy Load Versus Performance Playbook > Evidence Checklist，路径 knowledge_base/source_docs/project_glossary/heavy_load_vs_performance.md，关键词 BLER, KPI, NR, PRB, RAG, RAN, RSRP。 ## Evidence Checklist - PRB utilization: high values support capacity pressure; low values argue against heavy load. - Buffer growth: a high or increasing Estimated_UL_Buffer supports uplink resource pressure. - BLER and retransmission clues: high UL_...",
+      "metadata": {
+        "source_path": "knowledge_base/source_docs/project_glossary/heavy_load_vs_performance.md",
+        "page": "",
+        "group": "project_glossary"
+      }
+    }
+  ],
+  "context_block": "## Retrieved Telecom Knowledge\n\n[1] source: TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md\nsection: TelecomTS KPI And Anomaly Glossary > Radio Quality KPIs > DLBLER And ULBLER\nranker: bge_reranker | score: 0.9969\ndense_rank: 1 | bm25_rank: 2\nevidence: 上下文：来源 TelecomTS_glossary，类别 project_glossary，主题 KPI and anomaly troubleshooting glossary，章节 TelecomTS KPI And Anomaly Glossary > Radio Quality KPIs > DLBLER And ULBLER，路径 knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md，关键词 BLER, RAN, KPI, NR, DU, RSRP, SINR。 ### DL_BLER And UL_BLER Block Error Rate for downlink and uplink transport blocks. BLER is the fraction of transport blocks that cannot be decoded correctly. High UL_BLER means unreliable uplink transmission and can be caused by poor radio...\n\n[2] source: TelecomTS_glossary:knowledge_base/source_docs/project_glossary/heavy_load_vs_performance.md\nsection: Heavy Load Versus Performance Playbook > Evidence Checklist\nranker: bge_reranker | score: 0.9715\ndense_rank: 3 | bm25_rank: 3\nevidence: 上下文：来源 TelecomTS_glossary，类别 project_glossary，主题 KPI and anomaly troubleshooting glossary，章节 Heavy Load Versus Performance Playbook > Evidence Checklist，路径 knowledge_base/source_docs/project_glossary/heavy_load_vs_performance.md，关键词 BLER, KPI, NR, PRB, RAG, RAN, RSRP。 ## Evidence Checklist - PRB utilization: high values support capacity pressure; low values argue against heavy load. - Buffer growth: a high or increasing Estimated_UL_Buffer supports uplink resource pressure. - BLER and retransmission clues: high UL_...",
+  "rag_budget": {
+    "enabled": true,
+    "requested_top_k": 2,
+    "selected_top_k": 2,
+    "evidence_chars_per_hit": 520,
+    "rag_top_score": 0.9968641641227171,
+    "confidence_bucket": "high",
+    "ranking_mode": "bge_reranker",
+    "full_context_chars_est": 1720,
+    "compressed_context_chars_est": 1040,
+    "saved_context_chars_est": 680
+  },
+  "tool_call": {
+    "tool": "search_telecom_knowledge",
+    "args": {
+      "query": "What does high UL_BLER mean?",
+      "top_k": 2
+    },
+    "result": {
+      "final_count": 2,
+      "selected_top_k": 2,
+      "confidence_bucket": "high",
+      "ranking_mode": "bge_reranker",
+      "reranker_available": true,
+      "sources": [
+        "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+        "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/heavy_load_vs_performance.md"
+      ],
+      "sections": [
+        "TelecomTS KPI And Anomaly Glossary > Radio Quality KPIs > DLBLER And ULBLER",
+        "Heavy Load Versus Performance Playbook > Evidence Checklist"
+      ]
+    },
+    "success": true,
+    "error": null
+  }
+}

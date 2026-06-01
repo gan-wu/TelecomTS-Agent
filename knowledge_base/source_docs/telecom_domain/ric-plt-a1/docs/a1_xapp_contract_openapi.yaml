@@ -1,0 +1,93 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Contract between A1 and RIC Xapps
+
+components:
+  schemas:
+
+    policy_type_id:
+      description: >
+        represents a policy type identifier. Currently this is restricted to an integer range.
+      type: integer
+      minimum: 1
+      maximum: 2147483647
+
+    policy_instance_id:
+      description: >
+        represents a policy instance identifier. UUIDs are advisable but can be any string
+      type: string
+      example: "3d2157af-6a8f-4a7c-810f-38c2f824bf12"
+
+    policy_query_schema:
+      type: object
+      required:
+        - policy_type_id
+      additionalProperties: false
+      properties:
+        policy_type_id:
+          "$ref": "#/components/schemas/policy_type_id"
+
+    downstream_message_schema:
+      type: object
+      required:
+        - operation
+        - policy_type_id
+        - policy_instance_id
+        - payload
+      additionalProperties: false
+      properties:
+        operation:
+          description: the operation being performed
+          type: string
+          enum:
+            - CREATE
+            - DELETE
+            - UPDATE
+        policy_type_id:
+          "$ref": "#/components/schemas/policy_type_id"
+        policy_instance_id:
+          "$ref": "#/components/schemas/policy_instance_id"
+        payload:
+          description: payload for this operation
+          type: object
+      example:
+        operation: CREATE
+        policy_type_id: 12345678
+        policy_instance_id: 3d2157af-6a8f-4a7c-810f-38c2f824bf12
+        payload:
+          enforce: true
+          window_length: 10
+          blocking_rate: 20
+          trigger_threshold: 10
+
+    downstream_notification_schema:
+      type: object
+      required:
+        - policy_type_id
+        - policy_instance_id
+        - handler_id
+        - status
+      additionalProperties: false
+      properties:
+        policy_type_id:
+          "$ref": "#/components/schemas/policy_type_id"
+        policy_instance_id:
+          "$ref": "#/components/schemas/policy_instance_id"
+        handler_id:
+          description: >
+            id of the policy handler
+          type: string
+        status:
+          description: >
+            the status of this policy instance in this handler
+          type: string
+          enum:
+            - OK
+            - ERROR
+            - DELETED
+      example:
+        policy_type_id: 12345678
+        policy_instance_id: 3d2157af-6a8f-4a7c-810f-38c2f824bf12
+        handler_id: 1234-5678
+        status: OK

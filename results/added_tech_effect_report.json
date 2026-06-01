@@ -1,0 +1,375 @@
+{
+  "table6": {
+    "previous": {
+      "path": "D:\\WG\\python_code\\TelecomTS_QA\\results\\predictions_deepseekV3.2.csv",
+      "rows": 1000,
+      "stat_min": 0.0,
+      "stat_max": 136.868,
+      "period_min": 30.277272727272727,
+      "period_max": 30.277272727272727,
+      "trend_acc": 96.09375,
+      "traffic_acc": 95.53571428571429,
+      "mobility_acc": 98.9795918367347,
+      "location_acc": 97.53086419753086,
+      "congestion_acc": 45.94594594594595,
+      "tool_rate": null,
+      "critic_rate": 16.1,
+      "network_category_counts": {
+        "Congestion": 185,
+        "Traffic": 112,
+        "Mobility": 98,
+        "Location": 81,
+        "Other": 24
+      },
+      "timeseries_kind_counts": {
+        "statistics": 240,
+        "periodicity": 132,
+        "trend": 128
+      }
+    },
+    "current": {
+      "path": "D:\\WG\\python_code\\TelecomTS_QA\\results\\current_local_tool_rag_fixed.csv",
+      "rows": 1000,
+      "stat_min": 0.0,
+      "stat_max": 0.0,
+      "period_min": 0.07181818181818182,
+      "period_max": 0.07181818181818182,
+      "trend_acc": 100.0,
+      "traffic_acc": 98.21428571428571,
+      "mobility_acc": 100.0,
+      "location_acc": 100.0,
+      "congestion_acc": 48.10810810810811,
+      "tool_rate": 99.0,
+      "critic_rate": 0.0,
+      "network_category_counts": {
+        "Congestion": 185,
+        "Traffic": 112,
+        "Mobility": 98,
+        "Location": 81,
+        "Other": 24
+      },
+      "timeseries_kind_counts": {
+        "statistics": 240,
+        "periodicity": 132,
+        "trend": 128
+      }
+    }
+  },
+  "branches": {
+    "numeric_tool": {
+      "trace": [
+        "load_case",
+        "tool_router",
+        "critic"
+      ],
+      "final_answer": "The mean of UL_BLER is 0.008",
+      "tool_answer_used": true,
+      "tool_calls": [
+        {
+          "tool": "get_kpi_stat",
+          "args": {
+            "case_id": "ts_0_11164_16",
+            "kpi": "UL_BLER",
+            "metric": "mean"
+          },
+          "result": 0.008261518749999978,
+          "success": true,
+          "error": null
+        }
+      ],
+      "rag_hit_count": 0,
+      "rag_sources": [],
+      "model_calls": [],
+      "error": null
+    },
+    "knowledge_rag": {
+      "trace": [
+        "load_case",
+        "tool_router",
+        "rag_tool",
+        "solver",
+        "critic"
+      ],
+      "final_answer": "High UL_BLER means unreliable uplink transmission and can be caused by poor radio quality, jamming, interference, insufficient uplink power, aggressive MCS, or resource congestion.",
+      "tool_answer_used": false,
+      "tool_calls": [
+        {
+          "tool": "search_telecom_knowledge",
+          "args": {
+            "query": "What does high UL_BLER mean for 5G uplink troubleshooting?",
+            "top_k": 5
+          },
+          "result": {
+            "final_count": 5,
+            "sources": [
+              "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+              "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+              "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+              "TelecomTS_paper:2510.06063.pdf",
+              "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md"
+            ],
+            "sections": [
+              "TelecomTS KPI And Anomaly Glossary > Radio Quality KPIs > DLBLER And ULBLER",
+              "TelecomTS KPI And Anomaly Glossary > Resource And Traffic KPIs > EstimatedULBuffer",
+              "TelecomTS KPI And Anomaly Glossary > Radio Quality KPIs > ULSNR",
+              "2510.06063 > Algorithm 1End-to-End Data Collection Procedure",
+              "TelecomTS KPI And Anomaly Glossary > Resource And Traffic KPIs > PRBUtilizationDL And PRBUtilizationUL"
+            ]
+          },
+          "success": true,
+          "error": null
+        }
+      ],
+      "rag_hit_count": 5,
+      "rag_sources": [
+        {
+          "source": "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+          "section": "TelecomTS KPI And Anomaly Glossary > Radio Quality KPIs > DLBLER And ULBLER",
+          "rerank_score": 0.9832957351467632
+        },
+        {
+          "source": "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+          "section": "TelecomTS KPI And Anomaly Glossary > Resource And Traffic KPIs > EstimatedULBuffer",
+          "rerank_score": 0.9513950307179995
+        },
+        {
+          "source": "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+          "section": "TelecomTS KPI And Anomaly Glossary > Radio Quality KPIs > ULSNR",
+          "rerank_score": 0.9161208816286155
+        },
+        {
+          "source": "TelecomTS_paper:2510.06063.pdf",
+          "section": "2510.06063 > Algorithm 1End-to-End Data Collection Procedure",
+          "rerank_score": 0.8789926170142147
+        },
+        {
+          "source": "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+          "section": "TelecomTS KPI And Anomaly Glossary > Resource And Traffic KPIs > PRBUtilizationDL And PRBUtilizationUL",
+          "rerank_score": 0.7583092485305791
+        }
+      ],
+      "model_calls": [
+        {
+          "mode": "local",
+          "task": "solver",
+          "provider": "local",
+          "model": "qwen3.5-9b-q4",
+          "latency_ms": 2126.39,
+          "fallback_used": false
+        }
+      ],
+      "error": null
+    },
+    "normal_agent": {
+      "trace": [
+        "load_case",
+        "tool_router",
+        "analyst",
+        "solver",
+        "critic"
+      ],
+      "final_answer": "The session is healthy, characterized by stable signal quality, robust link reliability, and ample network resource headroom despite asymmetric video streaming activity.",
+      "tool_answer_used": false,
+      "tool_calls": [],
+      "rag_hit_count": 0,
+      "rag_sources": [],
+      "model_calls": [
+        {
+          "mode": "local",
+          "task": "analyst",
+          "provider": "local",
+          "model": "qwen3.5-9b-q4",
+          "latency_ms": 3697.62,
+          "fallback_used": false
+        },
+        {
+          "mode": "local",
+          "task": "solver",
+          "provider": "local",
+          "model": "qwen3.5-9b-q4",
+          "latency_ms": 1130.25,
+          "fallback_used": false
+        }
+      ],
+      "error": null
+    }
+  },
+  "retrieval": [
+    {
+      "query": "What does high UL_BLER mean for 5G uplink troubleshooting?",
+      "dense_top5": [
+        {
+          "rank": 1,
+          "id": "5740d6f4a0d58f80cf9da9ceb73df8dde72c872c",
+          "source": "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+          "section": "TelecomTS KPI And Anomaly Glossary > Resource And Traffic KPIs > EstimatedULBuffer",
+          "distance": 0.3004465103149414
+        },
+        {
+          "rank": 2,
+          "id": "ccc47822b0d838dfd135872c128351823cb9510a",
+          "source": "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+          "section": "TelecomTS KPI And Anomaly Glossary > Radio Quality KPIs > DLBLER And ULBLER",
+          "distance": 0.31190502643585205
+        },
+        {
+          "rank": 3,
+          "id": "1ef9546f2d0173cdc103ea7460f13870bd166bb1",
+          "source": "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+          "section": "TelecomTS KPI And Anomaly Glossary > Radio Quality KPIs > ULSNR",
+          "distance": 0.3243544101715088
+        },
+        {
+          "rank": 4,
+          "id": "f0fe3d68b270aaa444d2aa6f7f699f25148d4b9c",
+          "source": "openairinterface5g:doc/UL_MIMO.md",
+          "section": "UpLink Multiple Input Multiple Output (UL MIMO) > What is UL MIMO ?",
+          "distance": 0.3367762565612793
+        },
+        {
+          "rank": 5,
+          "id": "127c4c7c3c60dc094e3c96e7cbd5c6825d456592",
+          "source": "openairinterface5g:doc/UL_MIMO.md",
+          "section": "UpLink Multiple Input Multiple Output (UL MIMO) > Step 2: Use the sim > Option 2: launch UL sim",
+          "distance": 0.36594992876052856
+        }
+      ],
+      "hybrid_counts": {
+        "dense": 30,
+        "bm25": 30,
+        "fused": 30,
+        "final": 5
+      },
+      "hybrid_top5": [
+        {
+          "rank": 1,
+          "source": "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+          "section": "TelecomTS KPI And Anomaly Glossary > Radio Quality KPIs > DLBLER And ULBLER",
+          "rerank_score": 0.9832957351467632,
+          "dense_rank": 2,
+          "bm25_rank": 1
+        },
+        {
+          "rank": 2,
+          "source": "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+          "section": "TelecomTS KPI And Anomaly Glossary > Resource And Traffic KPIs > EstimatedULBuffer",
+          "rerank_score": 0.9513950307179995,
+          "dense_rank": 1,
+          "bm25_rank": 4
+        },
+        {
+          "rank": 3,
+          "source": "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+          "section": "TelecomTS KPI And Anomaly Glossary > Radio Quality KPIs > ULSNR",
+          "rerank_score": 0.9161208816286155,
+          "dense_rank": 3,
+          "bm25_rank": 3
+        },
+        {
+          "rank": 4,
+          "source": "TelecomTS_paper:2510.06063.pdf",
+          "section": "2510.06063 > Algorithm 1End-to-End Data Collection Procedure",
+          "rerank_score": 0.8789926170142147,
+          "dense_rank": 24,
+          "bm25_rank": 6
+        },
+        {
+          "rank": 5,
+          "source": "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+          "section": "TelecomTS KPI And Anomaly Glossary > Resource And Traffic KPIs > PRBUtilizationDL And PRBUtilizationUL",
+          "rerank_score": 0.7583092485305791,
+          "dense_rank": 8,
+          "bm25_rank": 5
+        }
+      ]
+    },
+    {
+      "query": "UL_BLER PRB_Utilization_DL gNB jamming KPI troubleshooting",
+      "dense_top5": [
+        {
+          "rank": 1,
+          "id": "8304aad9eae7af5fd338ea052657b14e9d429bec",
+          "source": "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+          "section": "TelecomTS KPI And Anomaly Glossary > Common Anomaly Patterns > Jamming Or Interference",
+          "distance": 0.2894176244735718
+        },
+        {
+          "rank": 2,
+          "id": "07f022af14ffb14f96b5d113008f359d7b4c47d3",
+          "source": "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+          "section": "TelecomTS KPI And Anomaly Glossary > Resource And Traffic KPIs > PRBUtilizationDL And PRBUtilizationUL",
+          "distance": 0.3327084183692932
+        },
+        {
+          "rank": 3,
+          "id": "c37376972973de786f868ff9897d85080ddf02b7",
+          "source": "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+          "section": "TelecomTS KPI And Anomaly Glossary > Common Anomaly Patterns > High Network Congestion",
+          "distance": 0.366030752658844
+        },
+        {
+          "rank": 4,
+          "id": "85dba806bc3812169cab5643ead8ee834ef62e33",
+          "source": "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+          "section": "TelecomTS KPI And Anomaly Glossary > Resource And Traffic KPIs > ULNPRB, PRBsDLCurrent, And PRBsULCurrent",
+          "distance": 0.3720269799232483
+        },
+        {
+          "rank": 5,
+          "id": "ccc47822b0d838dfd135872c128351823cb9510a",
+          "source": "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+          "section": "TelecomTS KPI And Anomaly Glossary > Radio Quality KPIs > DLBLER And ULBLER",
+          "distance": 0.37496310472488403
+        }
+      ],
+      "hybrid_counts": {
+        "dense": 30,
+        "bm25": 30,
+        "fused": 30,
+        "final": 5
+      },
+      "hybrid_top5": [
+        {
+          "rank": 1,
+          "source": "TelecomTS_paper:2510.06063.pdf",
+          "section": "2510.06063 > ULNPRB (Allocated Uplink Physical Resource Blocks)",
+          "rerank_score": 0.947394522854428,
+          "dense_rank": 7,
+          "bm25_rank": 5
+        },
+        {
+          "rank": 2,
+          "source": "TelecomTS_paper:2510.06063.pdf",
+          "section": "2510.06063 > 2510.06063",
+          "rerank_score": 0.943929100975687,
+          "dense_rank": 16,
+          "bm25_rank": 24
+        },
+        {
+          "rank": 3,
+          "source": "TelecomTS_glossary:knowledge_base/source_docs/project_glossary/kpi_anomaly_glossary.md",
+          "section": "TelecomTS KPI And Anomaly Glossary > Radio Quality KPIs > DLBLER And ULBLER",
+          "rerank_score": 0.8592211478813685,
+          "dense_rank": 5,
+          "bm25_rank": 3
+        },
+        {
+          "rank": 4,
+          "source": "TelecomTS_paper:2510.06063.pdf",
+          "section": "2510.06063 > Algorithm 1End-to-End Data Collection Procedure",
+          "rerank_score": 0.8526324041732938,
+          "dense_rank": null,
+          "bm25_rank": 12
+        },
+        {
+          "rank": 5,
+          "source": "TelecomTS_paper:2510.06063.pdf",
+          "section": "2510.06063 > E TelecomTS: An Example",
+          "rerank_score": 0.7893020783017092,
+          "dense_rank": null,
+          "bm25_rank": 9
+        }
+      ]
+    }
+  ]
+}

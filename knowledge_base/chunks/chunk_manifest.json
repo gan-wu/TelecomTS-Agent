@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-06-01T14:58:31+08:00",
+  "chunk_count": 1272,
+  "by_group": {
+    "project_glossary": 34,
+    "project_paper": 31,
+    "rag_methods": 183,
+    "telecom_domain": 1024
+  },
+  "by_repo": {
+    "FlagEmbedding": 176,
+    "TelecomTS_glossary": 34,
+    "TelecomTS_paper": 31,
+    "late-chunking": 7,
+    "openairinterface5g": 811,
+    "oran-sc-ric": 15,
+    "ric-app-kpimon-go": 7,
+    "ric-plt-a1": 76,
+    "srsRAN_Project": 115
+  },
+  "content_tokens": {
+    "min": 20,
+    "avg": 271.3,
+    "max": 900
+  },
+  "strategy": "structure_semantic_contextual_v1",
+  "config": {
+    "max_tokens": 900,
+    "min_tokens": 160,
+    "target_tokens": 700,
+    "overlap_tokens": 120,
+    "context_prefix_tokens": 100,
+    "semantic_break_threshold": 0.1
+  }
+}

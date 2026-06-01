@@ -1,0 +1,59 @@
+{
+  "output": "data\\benchmark_main_agent_3000.json",
+  "seed": 42,
+  "rows_scanned": 32000,
+  "native_qna_counts": {
+    "timeseries": 2048000,
+    "network": 160000
+  },
+  "target_quotas": {
+    "deterministic_tool": 1200,
+    "regular_network_agent": 500,
+    "heavy_load_reasoning": 500,
+    "diagnosis_reasoning": 300,
+    "multi_tool_composite": 250,
+    "rag_knowledge": 150,
+    "low_confidence_complex": 100
+  },
+  "internal_quotas": {
+    "regular_network_agent": 500,
+    "heavy_load_reasoning": 500,
+    "diagnosis_reasoning": 300,
+    "multi_tool_composite": 250,
+    "rag_knowledge": 150,
+    "low_confidence_complex": 100,
+    "deterministic_tool_timeseries": 700,
+    "deterministic_tool_network": 500
+  },
+  "actual_groups": {
+    "deterministic_tool": 1200,
+    "multi_tool_composite": 250,
+    "regular_network_agent": 500,
+    "heavy_load_reasoning": 500,
+    "diagnosis_reasoning": 300,
+    "rag_knowledge": 150,
+    "low_confidence_complex": 100
+  },
+  "actual_expected_routes": {
+    "tool": 1200,
+    "multi_tool": 250,
+    "local_or_flash": 500,
+    "flash": 800,
+    "rag_flash": 150,
+    "flash_then_pro_if_needed": 100
+  },
+  "actual_route_policies": {
+    "tool_first": 1200,
+    "multi_tool": 250,
+    "agent_first": 1400,
+    "rag_first": 150
+  },
+  "actual_types": {
+    "network": 1500,
+    "composite": 250,
+    "timeseries": 700,
+    "diagnosis": 300,
+    "knowledge": 150,
+    "complex_network": 100
+  }
+}

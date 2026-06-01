@@ -1,0 +1,54 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Large/generated data
+data/*.arrow
+knowledge_base/chroma/
+external_sources/raw_repos/
+*.gguf
+*.safetensors
+*.bin
+
+# Generated outputs
+results/_*
+results/*_tmp.*
+results/*_smoke.*
+results/main_agent_experiment_report.*
+knowledge_base/retrieval/*_check.json
+knowledge_base/retrieval/*_fallback_smoke.json
+
+# Keep selected display results
+!results/README.md
+!results/added_tech_effect_report.md
+!results/added_tech_effect_report.json
+!results/current_local_tool_rag_fixed.csv
+!results/predictions_deepseekV3.2.csv
+!results/predictions_deepseekV4_flash_tool_legacy.csv
+!results/predictions_deepseekV4_flash_no_tools_legacy.csv
+!results/main_agent_3000_hybrid_fair_rag_fast.csv
+!results/main_agent_experiment_report.md
+!results/main_agent_experiment_report.json
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
