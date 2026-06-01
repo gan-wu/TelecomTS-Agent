@@ -38,6 +38,14 @@
 
 ## 数据说明
 
+原始数据集来源：
+
+- Dataset: TelecomTS
+- Source: https://huggingface.co/datasets/AliMaatouk/TelecomTS
+- 本项目基于该公开数据集构建实验样本与问答任务；使用时请遵循原数据集页面的说明。
+
+本仓库只保留可复现实验所需的 JSON benchmark、RAG 知识库和处理脚本，未提交原始 Arrow 数据。
+
 仓库中已包含可直接运行的 JSON benchmark：
 
 - `data/benchmark.json`：1000 条基础评测样本。
@@ -50,7 +58,7 @@
 - `data/telecom_ts-full-00000-of-00002.arrow`
 - `data/telecom_ts-full-00001-of-00002.arrow`
 
-如果只是复现实验结果，可以直接使用仓库内 JSON benchmark；如果要从原始数据重新抽样构建 benchmark，需要额外放入 Arrow 文件。
+如果只是复现实验结果，可以直接使用仓库内 JSON benchmark；如果要从原始数据重新抽样构建 benchmark，需要额外放入 Arrow 文件。为保证 GitHub 展示包在不包含原始 Arrow 的情况下仍能复现 Tool Calling 的时序统计结果，`benchmark_main_agent_3000.json` 中保留了从原始序列预计算得到的高精度 `statistics.periodicity`。
 
 ## 环境安装
 
@@ -330,3 +338,6 @@ set LOCAL_API_KEY=EMPTY
 - 通信知识问题用 BGE-M3、Chroma、BM25、RRF 和 reranker 做检索增强。
 - 复杂推断问题保留大模型推理，并通过 Critic 校验输出质量。
 - 支持本地 Qwen 部署和 DeepSeek Flash/Pro 线上模型调度，能展示本地部署、API 接入和成本控制能力。
+
+
+

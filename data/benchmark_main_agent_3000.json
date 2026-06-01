@@ -2212,7 +2212,7 @@
           "mean": 438899.1796875,
           "variance": 29720348.778481793,
           "trend": 0,
-          "periodicity": 2
+          "periodicity": 2.56
         },
         "RX_Bytes": {
           "mean": 5361.4140625,
@@ -2767,7 +2767,7 @@
           "mean": 64.26281250000001,
           "variance": 1.9026833661417335,
           "trend": 0,
-          "periodicity": 2
+          "periodicity": 2.25
         },
         "PRBs_UL_Current": {
           "mean": 1.3165624999999999,
@@ -3988,7 +3988,7 @@
           "mean": 19.44116953125,
           "variance": 76.58145384717459,
           "trend": 0,
-          "periodicity": 9
+          "periodicity": 9.85
         },
         "PRB_Utilization_UL": {
           "mean": 1.10546015625,
@@ -6268,7 +6268,7 @@
           "mean": 1.36125,
           "variance": 0.5192803149606299,
           "trend": 0,
-          "periodicity": 10
+          "periodicity": 10.67
         },
         "PRB_Utilization_DL": {
           "mean": 59.670434375,
@@ -6918,7 +6918,7 @@
           "mean": 34.5703125,
           "variance": 5455.979269192913,
           "trend": 0,
-          "periodicity": 9
+          "periodicity": 9.85
         },
         "RX_Bytes": {
           "mean": 209.5546875,
@@ -10848,7 +10848,7 @@
           "mean": 53.551874999999995,
           "variance": 434.795829527559,
           "trend": 1,
-          "periodicity": 42
+          "periodicity": 42.67
         },
         "PRBs_UL_Current": {
           "mean": 2.108203125,
@@ -16339,7 +16339,7 @@
           "mean": 29.000859374999997,
           "variance": 57.445274058809055,
           "trend": 0,
-          "periodicity": 9
+          "periodicity": 9.85
         },
         "UL_SNR": {
           "mean": 18.6656640625,
@@ -21765,7 +21765,7 @@
           "mean": 1.664296875,
           "variance": 0.15944832062007872,
           "trend": 0,
-          "periodicity": 3
+          "periodicity": 3.28
         },
         "PRB_Utilization_DL": {
           "mean": 60.68944765625,
@@ -22871,7 +22871,7 @@
           "mean": 65.53125,
           "variance": 37528.518700787405,
           "trend": 0,
-          "periodicity": 6
+          "periodicity": 6.1
         }
       },
       "anomalies": {
@@ -25645,7 +25645,7 @@
           "mean": 20.4650390625,
           "variance": 0.397583266178642,
           "trend": 0,
-          "periodicity": 2
+          "periodicity": 2.25
         },
         "TX_Bytes": {
           "mean": 378189.3125,
@@ -27421,7 +27421,7 @@
           "mean": 130.014453125,
           "variance": 13110.348355604083,
           "trend": 0,
-          "periodicity": 21
+          "periodicity": 21.33
         },
         "PRBs_DL_Current": {
           "mean": 14.247421875,
@@ -34153,7 +34153,7 @@
           "mean": 210.4296875,
           "variance": 2556.5304502952754,
           "trend": 0,
-          "periodicity": 10
+          "periodicity": 10.67
         },
         "Estimated_UL_Buffer": {
           "mean": 0.0,
@@ -34299,7 +34299,7 @@
           "mean": 0.006640625,
           "variance": 0.00044768085629921263,
           "trend": 0,
-          "periodicity": 9
+          "periodicity": 9.85
         },
         "PRBs_UL_Current": {
           "mean": 0.026796874999999998,
@@ -34451,7 +34451,7 @@
           "mean": 0.83181328125,
           "variance": 0.12918888005843998,
           "trend": 0,
-          "periodicity": 2
+          "periodicity": 2.91
         },
         "UL_NumberOfPackets": {
           "mean": 51.640625,
@@ -37798,7 +37798,7 @@
           "mean": 64.323046875,
           "variance": 1.9162622969980327,
           "trend": 0,
-          "periodicity": 3
+          "periodicity": 3.66
         },
         "PRBs_UL_Current": {
           "mean": 2.233046875,
@@ -45199,7 +45199,7 @@
           "mean": 1.391875,
           "variance": 1.9309507874015748,
           "trend": 0,
-          "periodicity": 5
+          "periodicity": 5.57
         },
         "PRBs_UL_Current": {
           "mean": 0.205625,
@@ -52495,7 +52495,7 @@
           "mean": 76.9921875,
           "variance": 77.06293061023622,
           "trend": 0,
-          "periodicity": 3
+          "periodicity": 3.76
         },
         "DL_NumberOfPackets": {
           "mean": 295.8828125,
@@ -79372,7 +79372,7 @@
           "mean": 21.340078124999998,
           "variance": 0.8269551119586616,
           "trend": 0,
-          "periodicity": 11
+          "periodicity": 11.64
         },
         "TX_Bytes": {
           "mean": 81958.5234375,
@@ -82357,7 +82357,7 @@
           "mean": 62.370625000000004,
           "variance": 11.919423228346458,
           "trend": 0,
-          "periodicity": 42
+          "periodicity": 42.67
         },
         "PRBs_UL_Current": {
           "mean": 2.1136718749999996,
@@ -84651,7 +84651,7 @@
           "mean": 283.72867187500003,
           "variance": 4020.1908068836124,
           "trend": 0,
-          "periodicity": 3
+          "periodicity": 3.88
         },
         "PRBs_DL_Current": {
           "mean": 56.172578125,
@@ -94633,7 +94633,7 @@
           "mean": 1.3346023437499999,
           "variance": 0.5105271293645423,
           "trend": 0,
-          "periodicity": 14
+          "periodicity": 14.22
         },
         "UL_NumberOfPackets": {
           "mean": 47.0625,
@@ -96776,7 +96776,7 @@
           "mean": 0.0278125,
           "variance": 0.0016581692913385825,
           "trend": 0,
-          "periodicity": 3
+          "periodicity": 3.46
         },
         "PRB_Utilization_DL": {
           "mean": 0.00626875,
@@ -102997,7 +102997,7 @@
           "mean": 3.171875,
           "variance": 7.844242125984252,
           "trend": 0,
-          "periodicity": 4
+          "periodicity": 4.74
         },
         "DL_NumberOfPackets": {
           "mean": 6.15625,
@@ -114853,7 +114853,7 @@
           "mean": 66.2734375,
           "variance": 30709.397084153545,
           "trend": -1,
-          "periodicity": 2
+          "periodicity": 2.61
         }
       },
       "anomalies": {
@@ -121966,7 +121966,7 @@
           "mean": 0.048984375,
           "variance": 0.07208951156496064,
           "trend": 0,
-          "periodicity": 42
+          "periodicity": 42.67
         },
         "PRBs_UL_Current": {
           "mean": 0.12375,
@@ -127621,7 +127621,7 @@
           "mean": 16.786093750000003,
           "variance": 1.889370447834645,
           "trend": 0,
-          "periodicity": 2
+          "periodicity": 2.25
         },
         "PRBs_UL_Current": {
           "mean": 0.85375,
@@ -128037,7 +128037,7 @@
           "mean": 14.388872656250001,
           "variance": 10.066449965781866,
           "trend": 0,
-          "periodicity": 18
+          "periodicity": 18.29
         },
         "PRB_Utilization_UL": {
           "mean": 0.7402039062500001,
@@ -136661,7 +136661,7 @@
           "mean": 18.4921875,
           "variance": 347.82671013779526,
           "trend": 0,
-          "periodicity": 9
+          "periodicity": 9.85
         },
         "DL_NumberOfPackets": {
           "mean": 59.3125,
@@ -137477,7 +137477,7 @@
           "mean": 290.73928574253057,
           "variance": 97620.55217002939,
           "trend": 0,
-          "periodicity": 2
+          "periodicity": 2.29
         }
       },
       "anomalies": {
@@ -145942,7 +145942,7 @@
           "mean": 22.09375,
           "variance": 175.69192913385828,
           "trend": 0,
-          "periodicity": 3
+          "periodicity": 3.28
         },
         "DL_NumberOfPackets": {
           "mean": 56.1328125,
@@ -149162,7 +149162,7 @@
           "mean": 18.0584546875,
           "variance": 60.439310144387306,
           "trend": 1,
-          "periodicity": 6
+          "periodicity": 6.4
         },
         "PRB_Utilization_UL": {
           "mean": 1.0891953124999998,
@@ -153720,7 +153720,7 @@
           "mean": 401.818828125,
           "variance": 4953.884563182824,
           "trend": 0,
-          "periodicity": 6
+          "periodicity": 6.1
         },
         "PRBs_DL_Current": {
           "mean": 63.360078125,
@@ -170115,7 +170115,7 @@
           "mean": 22.098125000000003,
           "variance": 62.49993661417324,
           "trend": 0,
-          "periodicity": 21
+          "periodicity": 21.33
         },
         "UL_SNR": {
           "mean": 20.894453125000002,
@@ -178352,7 +178352,7 @@
           "mean": 437424.2421875,
           "variance": 158534072.3582062,
           "trend": 0,
-          "periodicity": 2
+          "periodicity": 2.51
         },
         "RX_Bytes": {
           "mean": 8350.15625,
@@ -179981,7 +179981,7 @@
           "mean": 156.1878125,
           "variance": 13619.904968405514,
           "trend": 0,
-          "periodicity": 18
+          "periodicity": 18.29
         },
         "PRBs_DL_Current": {
           "mean": 16.302109375,
@@ -181213,7 +181213,7 @@
           "mean": 14.28434921875,
           "variance": 13.822672649605684,
           "trend": 0,
-          "periodicity": 18
+          "periodicity": 18.29
         },
         "PRB_Utilization_UL": {
           "mean": 0.794884375,
@@ -185889,7 +185889,7 @@
           "mean": 3303.921875,
           "variance": 4038502.938730315,
           "trend": 0,
-          "periodicity": 3
+          "periodicity": 3.88
         },
         "Estimated_UL_Buffer": {
           "mean": 140.49125,
@@ -188060,7 +188060,7 @@
           "mean": 60.68605546875,
           "variance": 1.7498934087887548,
           "trend": 0,
-          "periodicity": 3
+          "periodicity": 3.66
         },
         "PRB_Utilization_UL": {
           "mean": 1.3609484375,
@@ -205983,7 +205983,7 @@
           "mean": 23.8203125,
           "variance": 94.38478100393701,
           "trend": 0,
-          "periodicity": 3
+          "periodicity": 3.37
         },
         "DL_NumberOfPackets": {
           "mean": 59.8203125,
@@ -206631,7 +206631,7 @@
           "mean": 64.2175,
           "variance": 7.334299212598425,
           "trend": 0,
-          "periodicity": 3
+          "periodicity": 3.66
         },
         "PRBs_UL_Current": {
           "mean": 1.2511718749999998,
@@ -209745,7 +209745,7 @@
           "mean": 0.8077343749999999,
           "variance": 0.6490822281003937,
           "trend": 0,
-          "periodicity": 2
+          "periodicity": 2.56
         },
         "PRB_Utilization_DL": {
           "mean": 10.30854609375,
@@ -212950,7 +212950,7 @@
           "mean": 439957.34375,
           "variance": 42143888.38484252,
           "trend": 0,
-          "periodicity": 2
+          "periodicity": 2.17
         },
         "RX_Bytes": {
           "mean": 5547.03125,
@@ -217021,7 +217021,7 @@
           "mean": 0.0051625,
           "variance": 0.0002538114960629921,
           "trend": 0,
-          "periodicity": 9
+          "periodicity": 9.85
         },
         "PRB_Utilization_UL": {
           "mean": 0.024706250000000003,
@@ -226147,7 +226147,7 @@
           "mean": 439515.8515625,
           "variance": 28710864.37936762,
           "trend": 0,
-          "periodicity": 2
+          "periodicity": 2.33
         },
         "RX_Bytes": {
           "mean": 4925.0703125,
@@ -236252,7 +236252,7 @@
           "mean": 21.080937499999997,
           "variance": 1.0698691929133854,
           "trend": 0,
-          "periodicity": 2
+          "periodicity": 2.91
         },
         "TX_Bytes": {
           "mean": 438899.1796875,
@@ -238551,7 +238551,7 @@
           "mean": 3448.609375,
           "variance": 5381414.082431102,
           "trend": 0,
-          "periodicity": 9
+          "periodicity": 9.85
         },
         "Estimated_UL_Buffer": {
           "mean": 149.325390625,
@@ -250318,7 +250318,7 @@
           "mean": 1.20969453125,
           "variance": 0.37858746052103837,
           "trend": 0,
-          "periodicity": 42
+          "periodicity": 42.67
         },
         "UL_NumberOfPackets": {
           "mean": 69.796875,
@@ -254763,7 +254763,7 @@
           "mean": 1.478292452879134,
           "variance": 0.37350259682673176,
           "trend": 0,
-          "periodicity": 14
+          "periodicity": 14.22
         },
         "UL_NumberOfPackets": {
           "mean": 73.8828125,
@@ -257983,7 +257983,7 @@
           "mean": 16.48234375,
           "variance": 46.777718873031496,
           "trend": 0,
-          "periodicity": 2
+          "periodicity": 2.72
         },
         "PRBs_UL_Current": {
           "mean": 0.9707031249999999,
@@ -269318,7 +269318,7 @@
           "mean": 23.7734375,
           "variance": 130.61755659448818,
           "trend": 0,
-          "periodicity": 6
+          "periodicity": 6.74
         },
         "DL_NumberOfPackets": {
           "mean": 59.3125,
@@ -270227,7 +270227,7 @@
           "mean": 132.41671875,
           "variance": 26729.15737182579,
           "trend": 0,
-          "periodicity": 21
+          "periodicity": 21.33
         },
         "PRBs_DL_Current": {
           "mean": 13.731796875,
@@ -270367,7 +270367,7 @@
           "mean": 62.304140625,
           "variance": 114.56987327140749,
           "trend": 0,
-          "periodicity": 25
+          "periodicity": 25.6
         },
         "PRBs_UL_Current": {
           "mean": 1.68484375,
@@ -274285,7 +274285,7 @@
           "mean": 14.73881015625,
           "variance": 121.27082203399051,
           "trend": 0,
-          "periodicity": 6
+          "periodicity": 6.74
         },
         "PRB_Utilization_UL": {
           "mean": 0.7647117187500001,
@@ -285720,7 +285720,7 @@
           "mean": 0.90171875,
           "variance": 0.4991734005905512,
           "trend": 0,
-          "periodicity": 2
+          "periodicity": 2.33
         },
         "PRB_Utilization_DL": {
           "mean": 19.074641406250002,
@@ -288257,7 +288257,7 @@
           "mean": 208.5703125,
           "variance": 1405.5225762795276,
           "trend": 0,
-          "periodicity": 5
+          "periodicity": 5.82
         },
         "Estimated_UL_Buffer": {
           "mean": 0.0,
@@ -301998,7 +301998,7 @@
           "mean": 1.5568749999999998,
           "variance": 58.63430039370078,
           "trend": 0,
-          "periodicity": 18
+          "periodicity": 18.29
         },
         "PRBs_UL_Current": {
           "mean": 0.35562499999999997,
@@ -309157,7 +309157,7 @@
           "mean": 1.46051875,
           "variance": 0.3712887646850394,
           "trend": 0,
-          "periodicity": 5
+          "periodicity": 5.82
         },
         "UL_NumberOfPackets": {
           "mean": 84.84375,
@@ -310588,7 +310588,7 @@
           "mean": 9.32421875,
           "variance": 1.0982293061023622,
           "trend": 0,
-          "periodicity": 42
+          "periodicity": 42.67
         },
         "UL_NPRB": {
           "mean": 5.436484375,
@@ -314685,7 +314685,7 @@
           "mean": 23.1640625,
           "variance": 208.2642101377953,
           "trend": 0,
-          "periodicity": 2
+          "periodicity": 2.17
         },
         "DL_NumberOfPackets": {
           "mean": 58.0625,
@@ -315611,7 +315611,7 @@
           "mean": 0.029765624999999997,
           "variance": 0.0008164800688976378,
           "trend": 0,
-          "periodicity": 2
+          "periodicity": 2.37
         },
         "PRB_Utilization_DL": {
           "mean": 0.007375,
@@ -342532,7 +342532,7 @@
           "mean": 6.15859375,
           "variance": 9.510539739173225,
           "trend": 0,
-          "periodicity": 4
+          "periodicity": 4.41
         },
         "UL_SNR": {
           "mean": 20.5159375,
@@ -342802,7 +342802,7 @@
           "mean": 12.03359375,
           "variance": 12.763999581692913,
           "trend": 0,
-          "periodicity": 6
+          "periodicity": 6.1
         },
         "UL_SNR": {
           "mean": 20.410273437499995,
@@ -345756,7 +345756,7 @@
           "mean": 16.575234375,
           "variance": 0.5026456139271654,
           "trend": -1,
-          "periodicity": 42
+          "periodicity": 42.67
         },
         "UL_NPRB": {
           "mean": 23.567812499999995,
@@ -348621,7 +348621,7 @@
           "mean": 0.005078124999999999,
           "variance": 0.00022991510826771648,
           "trend": 0,
-          "periodicity": 9
+          "periodicity": 9.85
         },
         "PRBs_UL_Current": {
           "mean": 0.0234375,
@@ -354378,7 +354378,7 @@
           "mean": 12.655546874999999,
           "variance": 10.668565052903542,
           "trend": 0,
-          "periodicity": 7
+          "periodicity": 7.11
         },
         "UL_SNR": {
           "mean": 21.158359375000003,
@@ -356307,7 +356307,7 @@
           "mean": 0.0036875,
           "variance": 0.00016171574803149603,
           "trend": 0,
-          "periodicity": 3
+          "periodicity": 3.28
         },
         "PRB_Utilization_UL": {
           "mean": 0.025075000000000004,
@@ -357909,7 +357909,7 @@
           "mean": 16.716875,
           "variance": 81.11150984251968,
           "trend": 0,
-          "periodicity": 4
+          "periodicity": 4.92
         },
         "PRBs_UL_Current": {
           "mean": 0.8496874999999999,
@@ -359680,7 +359680,7 @@
           "mean": 1.2138921875,
           "variance": 0.4385822890723426,
           "trend": 1,
-          "periodicity": 14
+          "periodicity": 14.22
         },
         "UL_NumberOfPackets": {
           "mean": 69.8984375,
@@ -370032,7 +370032,7 @@
           "mean": 1.88420703125,
           "variance": 0.3377924526273377,
           "trend": 0,
-          "periodicity": 9
+          "periodicity": 9.14
         },
         "UL_NumberOfPackets": {
           "mean": 102.84375,
@@ -370278,7 +370278,7 @@
           "mean": 1154.014609375,
           "variance": 200570.06591795644,
           "trend": 0,
-          "periodicity": 25
+          "periodicity": 25.6
         },
         "PRBs_DL_Current": {
           "mean": 17.765468749999997,
@@ -370442,7 +370442,7 @@
           "mean": 21.171875,
           "variance": 65.6552657480315,
           "trend": 0,
-          "periodicity": 2
+          "periodicity": 2.98
         },
         "DL_NumberOfPackets": {
           "mean": 59.453125,
@@ -372307,7 +372307,7 @@
           "mean": 13.97749765625,
           "variance": 150.07405655692358,
           "trend": 0,
-          "periodicity": 9
+          "periodicity": 9.85
         },
         "PRB_Utilization_UL": {
           "mean": 0.856665625,
@@ -373916,7 +373916,7 @@
           "mean": 2.023984375,
           "variance": 19.15443203125,
           "trend": -1,
-          "periodicity": 42
+          "periodicity": 42.67
         },
         "PRB_Utilization_DL": {
           "mean": 15.402998437499999,
@@ -383210,7 +383210,7 @@
           "mean": 1.0667968749999999,
           "variance": 1.0078628875492126,
           "trend": 0,
-          "periodicity": 3
+          "periodicity": 3.46
         },
         "PRB_Utilization_DL": {
           "mean": 14.42903984375,
@@ -387768,7 +387768,7 @@
           "mean": 787.78125,
           "variance": 5388526.077755906,
           "trend": 0,
-          "periodicity": 5
+          "periodicity": 5.57
         },
         "Estimated_UL_Buffer": {
           "mean": 876.1607812499999,
@@ -388859,7 +388859,7 @@
           "mean": 64.401640625,
           "variance": 2.030854767470474,
           "trend": 0,
-          "periodicity": 2
+          "periodicity": 2.25
         },
         "PRBs_UL_Current": {
           "mean": 1.2,
@@ -394484,7 +394484,7 @@
           "mean": 21.2271875,
           "variance": 5.417647539370078,
           "trend": 0,
-          "periodicity": 3
+          "periodicity": 3.56
         },
         "TX_Bytes": {
           "mean": 40815.265625,
@@ -400429,7 +400429,7 @@
           "mean": 16.714296875000002,
           "variance": 27538.90717745448,
           "trend": 0,
-          "periodicity": 42
+          "periodicity": 42.67
         },
         "PRBs_DL_Current": {
           "mean": 0.845234375,
@@ -402457,7 +402457,7 @@
           "mean": 14.016484375000001,
           "variance": 151.90488439345472,
           "trend": 0,
-          "periodicity": 9
+          "periodicity": 9.85
         },
         "PRBs_UL_Current": {
           "mean": 0.7923437500000001,
